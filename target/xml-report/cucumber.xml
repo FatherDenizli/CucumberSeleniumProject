@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="25.305" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Registration_Pages" name="Test01" time="25.071">
+<testsuite name="Cucumber" time="54.08" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Registration_Pages" name="Test01" time="53.884">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then User verifies that home page is visible successfully...................passed
@@ -10,6 +10,10 @@ Then User enters name and email address.....................................pass
 Then User clicks 'Signup' button............................................passed
 Then User verifies that 'ENTER ACCOUNT INFORMATION' is visible..............passed
 Then User fills details: Title, Name, Email, Password, Date of birth........passed
+Then User selects checkbox1 'Sign up for our newsletter!'...................passed
+Then User selects checkbox2 'Receive special offers from our partners!'.....passed
+Then User fills details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number.passed
+Then User clicks 'Create Account button'....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

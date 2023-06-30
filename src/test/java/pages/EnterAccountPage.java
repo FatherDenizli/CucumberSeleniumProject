@@ -31,8 +31,13 @@ public class EnterAccountPage {
     @FindBy(id="years")
     public WebElement year;
 
-    @FindBy(id="uniform-newsletter")
+    @FindBy(xpath = "//*[text()='Sign up for our newsletter!']")
     public WebElement newsLetterCheckbox;
+
+    @FindBy(xpath = "//*[text()='Receive special offers from our partners!']")
+    public WebElement specialOffersCheckbox;
+
+
 
     @FindBy(id="first_name")
     public WebElement firstName;
@@ -45,6 +50,30 @@ public class EnterAccountPage {
 
     @FindBy(id="address1")
     public WebElement address1;
+
+    @FindBy(xpath="//*[@id='country']")
+    public WebElement countryName;
+
+    @FindBy(xpath="//*[@id='state']")
+    public WebElement stateName;
+
+    @FindBy(xpath="//*[@id='city']")
+    public WebElement cityName;
+
+    @FindBy(xpath="//*[@id='zipcode']")
+    public WebElement zipCode;
+
+    @FindBy(xpath="//*[@id='mobile_number']")
+    public WebElement mobileNumber;
+
+    @FindBy(xpath="//button[@data-qa='create-account']")
+    public WebElement creatAccountButton;
+
+
+
+
+
+
 
 
 
