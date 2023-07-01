@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.952" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Logoutuser Test" name="Register Test Case" time="13.765">
+<testsuite name="Cucumber" time="12.752" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Register With Existing email Test" name="Register User with existing email Test Case 5" time="12.566">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
-Then Verify that home page is visible successfully..........................passed
+Then User verifies that home page is visible successfully...................passed
 Then User clicks on 'Signup / Login' button.................................passed
-Then Verify 'Login to your account' is visible..............................passed
-Then User Enters correct email address and password.........................passed
-Then user clicks 'login' button.............................................passed
-Then Verify that 'Logged in as username' is visible.........................passed
-Then Clicks 'Logout' button.................................................passed
+Then User verifies 'New User Signup!' is visible............................passed
+Then User Enters name and already registered email address..................passed
+Then User clicks 'Signup' button............................................passed
+Then Verify that error 'Email Address already exist!' is visible............passed
 ]]></system-out>
 </testcase>
 </testsuite>

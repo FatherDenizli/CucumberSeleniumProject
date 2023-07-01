@@ -49,6 +49,9 @@ public class AutomationMainPage {
     @FindBy(linkText ="Logout")
     public WebElement logout;
 
+    @FindBy(xpath ="//*[text()='Email Address already exist!']")
+    public WebElement emailAlreadyExist;
+
 
 
 
