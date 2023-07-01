@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.AutomationMainPage;
@@ -8,7 +9,9 @@ import utilities.Driver;
 
 public class LoginStepDefinitions {
 
-AutomationMainPage automationMainPage=new AutomationMainPage();
+     AutomationMainPage automationMainPage=new AutomationMainPage();
+
+     Faker faker=new Faker();
 
     @Then("Verify that home page is visible successfully")
     public void verify_that_home_page_is_visible_successfully() {
@@ -50,8 +53,17 @@ AutomationMainPage automationMainPage=new AutomationMainPage();
 
 
 
+// NEGATIF LOGIN
+    @Then("Enter incorrect email address and password")
+    public void enter_incorrect_email_address_and_password() {
+        automationMainPage.email.sendKeys(faker.internet().emailAddress());
+        automationMainPage.loginPassword.sendKeys(faker.internet().password());
+    }
+    @Then("Verify error {string} is visible")
+    public void verify_error_is_visible(String string) {
+        automationMainPage.emailorPasswordIncorrect.isDisplayed();
 
-
+    }
 
 
 

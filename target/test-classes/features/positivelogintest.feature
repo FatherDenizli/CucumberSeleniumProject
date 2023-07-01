@@ -1,5 +1,5 @@
- @login_user_page
-  Feature: Login User Page
+ @Positive_Login_Test
+  Feature: Positive Login
 
     Scenario: Test02
 

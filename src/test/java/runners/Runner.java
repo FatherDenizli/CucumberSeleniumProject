@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks" },
         dryRun = false,
-        tags = "@login_user_page"
+        tags = "@Negative_Login_Test"
 )
 public class Runner {
 }

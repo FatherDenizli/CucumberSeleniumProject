@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="18.043" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Login User Page" name="Test02" time="17.83">
+<testsuite name="Cucumber" time="11.868" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Negative Login" name="Test03" time="11.66">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then Verify that home page is visible successfully..........................passed
 Then User clicks on 'Signup / Login' button.................................passed
 Then Verify 'Login to your account' is visible..............................passed
-Then User Enters correct email address and password.........................passed
+Then Enter incorrect email address and password.............................passed
 Then user clicks 'login' button.............................................passed
-Then Verify that 'Logged in as username' is visible.........................passed
-Then User clicks 'Delete Account' button to delete account..................passed
-Then Verify that 'ACCOUNT DELETED!' should be visible visible...............passed
+Then Verify error 'Your email or password is incorrect!' is visible.........passed
 ]]></system-out>
 </testcase>
 </testsuite>

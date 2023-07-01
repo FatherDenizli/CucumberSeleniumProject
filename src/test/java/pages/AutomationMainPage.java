@@ -43,6 +43,13 @@ public class AutomationMainPage {
     @FindBy(xpath ="//*[text()='Account Deleted!']")
     public WebElement accountDeletedText;
 
+    @FindBy(xpath ="//*[text()='Your email or password is incorrect!']")
+    public WebElement emailorPasswordIncorrect;
+
+
+
+
+
 
 
 
