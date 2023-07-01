@@ -15,8 +15,10 @@ import org.junit.runner.RunWith;
         monochrome=true,
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks" },
-        dryRun = true,
-        tags = "@Registration"
+        dryRun = false,
+        tags = "@Negative_Login_Test"
 )
 public class Runner {
 }
+//@Registration
+//@login_user_page
