@@ -1,7 +1,7 @@
  @Positive_Login_Test
-  Feature: Positive Login
+  Feature: Positive Login Test
 
-    Scenario: Test02
+    Scenario: Positive Login Test Case
 
 
       Given User is on automation page

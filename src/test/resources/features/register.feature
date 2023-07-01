@@ -1,7 +1,7 @@
 @Registration
 Feature:Registration_Pages
 
- Scenario: Test01
+ Scenario: Register Test Case
    Given User is on automation page
    Then User verifies that home page is visible successfully
    Then  User clicks on 'Signup / Login' button

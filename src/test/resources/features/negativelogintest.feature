@@ -1,8 +1,8 @@
 @Negative_Login_Test
 
-Feature: Negative Login
+Feature: Negative Login Test
 
-  Scenario: Test03
+  Scenario: Negative Login Test Case
 
     Given User is on automation page
 

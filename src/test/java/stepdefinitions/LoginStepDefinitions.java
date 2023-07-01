@@ -53,7 +53,7 @@ public class LoginStepDefinitions {
 
 
 
-// NEGATIF LOGIN
+// NEGATIF LOGIN TEST
     @Then("Enter incorrect email address and password")
     public void enter_incorrect_email_address_and_password() {
         automationMainPage.email.sendKeys(faker.internet().emailAddress());
@@ -66,9 +66,14 @@ public class LoginStepDefinitions {
     }
 
 
+// LOGOUT USER TEST
 
+    @Then("Clicks {string} button")
+    public void clicks_button(String string) {
 
+        automationMainPage.logout.click();
 
+    }
 
 
 }
