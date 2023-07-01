@@ -46,6 +46,9 @@ public class AutomationMainPage {
     @FindBy(xpath ="//*[text()='Your email or password is incorrect!']")
     public WebElement emailorPasswordIncorrect;
 
+    @FindBy(linkText ="Logout")
+    public WebElement logout;
+
 
 
 
