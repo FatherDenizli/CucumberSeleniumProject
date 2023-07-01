@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.AutomationMainPage;
+import pages.SignUpLoginPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
@@ -11,6 +12,7 @@ public class LoginStepDefinitions {
 
      AutomationMainPage automationMainPage=new AutomationMainPage();
 
+     SignUpLoginPage signUpLoginPage=new SignUpLoginPage();
      Faker faker=new Faker();
 
     @Then("Verify that home page is visible successfully")
@@ -66,7 +68,7 @@ public class LoginStepDefinitions {
     }
 
 
-// LOGOUT USER TEST
+// LOGOUT USER TEST  (Ready 8 Reuseable Methods from Positive Login)
 
     @Then("Clicks {string} button")
     public void clicks_button(String string) {
@@ -74,6 +76,30 @@ public class LoginStepDefinitions {
         automationMainPage.logout.click();
 
     }
+
+
+    //Test Case 5: Register User with existing email (Ready 6  Reuseable Methods from Positive Login)
+
+
+    @Then("User Enters name and already registered email address")
+    public void user_enters_name_and_already_registered_email_address() {
+
+        signUpLoginPage.nameInputBox.sendKeys(ConfigReader.getProperty("user_name"));
+        signUpLoginPage.emailInputBox.sendKeys(ConfigReader.getProperty("login_email"));
+
+
+    }
+    @Then("Verify that error {string} is visible")
+    public void verify_that_error_is_visible(String string) {
+
+        automationMainPage.emailAlreadyExist.isDisplayed();
+
+
+    }
+
+
+
+
 
 
 }
