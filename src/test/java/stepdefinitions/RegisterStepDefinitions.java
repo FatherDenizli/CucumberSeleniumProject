@@ -50,10 +50,12 @@ public class RegisterStepDefinitions {
     @Then("User enters name and email address")
     public void user_enters_name_and_email_address() {
         Faker faker1 =new Faker();
-        signUpLoginPage.nameInputBox.sendKeys(faker1.name().name());
+       // signUpLoginPage.nameInputBox.sendKeys(faker1.name().name());
         ReusableMethods.waitFor(2);
-        signUpLoginPage.emailInputBox.sendKeys(faker1.internet().emailAddress());
+        signUpLoginPage.nameInputBox.sendKeys(ConfigReader.getProperty("user_name"));
+      //  signUpLoginPage.emailInputBox.sendKeys(faker1.internet().emailAddress());
         ReusableMethods.waitFor(2);
+        signUpLoginPage.emailInputBox.sendKeys(ConfigReader.getProperty("login_email"));
 
     }
     @Then("User clicks {string} button")
@@ -79,7 +81,10 @@ public class RegisterStepDefinitions {
 
         Assert.assertTrue(( enterAccountPage.maleRadioButton.isSelected()));//Verifing the red button is selected
 
-     enterAccountPage.UserPassword.sendKeys(faker.internet().password());
+    // enterAccountPage.UserPassword.sendKeys(faker.internet().password());
+       // enterAccountPage.UserPassword.sendKeys("Toronto20");
+         enterAccountPage.UserPassword.sendKeys(ConfigReader.getProperty("login_password"));
+
         Select select1=new Select(enterAccountPage.day);
         select1.selectByIndex(23);
         ReusableMethods.waitFor(2);
