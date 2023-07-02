@@ -56,7 +56,7 @@ public class Driver {
                 driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
             }
         }
-         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();
         return driver;
     }
@@ -313,7 +313,34 @@ public class Driver {
     }
 
 
-
+//DRIVER FOR ALERT  (There is a problem for driver, when I try to accept Alert, page insist on maximize. So,  I canceled maximize)
+public static WebDriver getAlertDriver() {
+    //create the driver if and only if it is null
+    if (driver == null) {
+        String browser = ConfigReader.getProperty("browser");
+        if ("chrome".equals(browser)) {
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new ChromeDriver(options);
+        } else if ("firefox".equals(browser)) {
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver();
+        } else if ("ie".equals(browser)) {
+            WebDriverManager.iedriver().setup();
+            driver = new InternetExplorerDriver();
+        } else if ("safari".equals(browser)) {
+            WebDriverManager.getInstance(SafariDriver.class).setup();
+            driver = new SafariDriver();
+        } else if ("chrome-headless".equals(browser)) {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver(new ChromeOptions().setHeadless(true));
+        }
+    }
+    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+    //driver.manage().window().maximize();
+    return driver;
+}
 
 
 
