@@ -31,8 +31,26 @@ public class ContactUsFormPage {
     @FindBy(xpath ="//*[@data-qa='subject']")
     public WebElement subjectForContact;
 
-    @FindBy(xpath ="//*[text()='Your Message Here']")
+//    @FindBy(xpath ="//*[text()='Your Message Here']")
+//    public WebElement messageForContact;
+
+    @FindBy(css ="#message")
     public WebElement messageForContact;
+
+    @FindBy(xpath ="//input[@name='upload_file']")
+    public WebElement choseFileButton;
+
+    @FindBy(xpath ="//input[@data-qa='submit-button']")
+    public WebElement submitButton;
+
+
+    @FindBy(xpath ="//*[text()='Success! Your details have been submitted successfully.']")
+    public WebElement successMessage ;
+
+    @FindBy(xpath ="//*[text()=' Home']")
+    public WebElement homeButton ;
+
+
 
 
 

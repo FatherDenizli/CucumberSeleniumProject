@@ -10,7 +10,7 @@ Feature: Contact Us Form
     Then Verify 'GET IN TOUCH' is visible in contact page
     Then User Enters  name, email, subject and message
     Then user Uploads file
-    Then User clicks 'Submit' button
+    Then User clicks 'Submit' button to upload file
     Then User clicks OK button
     Then Verify success message 'Success! Your details have been submitted successfully.' is visible
     Then  Users Click 'Home' button and verify that landed to home page successfully
