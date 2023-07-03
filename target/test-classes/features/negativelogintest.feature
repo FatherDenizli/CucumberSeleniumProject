@@ -1,8 +1,8 @@
 @Negative_Login_Test
 
-Feature: Negative Login Test
+Feature: Login User with incorrect email and password
 
-  Scenario: Negative Login Test Case
+  Scenario:  Test Case 3
 
     Given User is on automation page
 

@@ -19,8 +19,6 @@ public class ContactUsFormPage {
     public WebElement getInTouchText;
 
 
-
-
     @FindBy(xpath ="//*[@data-qa='name']")
     public WebElement nameForContact;
 
@@ -49,6 +47,8 @@ public class ContactUsFormPage {
 
     @FindBy(xpath ="//*[text()=' Home']")
     public WebElement homeButton ;
+
+
 
 
 

@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="21.565" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Contact Us Form" name="Contact Us Form Test Case" time="21.364">
+<testsuite name="Cucumber" time="25.376" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Verify All Products and product detail page Test" name="Test Case 8" time="25.148">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then Verify that home page is visible successfully..........................passed
-Then User clicks on 'Contact Us' form button................................passed
-Then Verify 'GET IN TOUCH' is visible in contact page.......................passed
-Then User Enters  name, email, subject and message..........................passed
-Then user Uploads file......................................................passed
-Then User clicks 'Submit' button to upload file.............................passed
-Then User clicks OK button..................................................passed
-Then Verify success message 'Success! Your details have been submitted successfully.' is visible.passed
-Then Users Click 'Home' button and verify that landed to home page successfully.passed
+Then User clicks on 'Products' button to see products.......................passed
+Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
+Then The products list is visible...........................................passed
+Then Click on 'View Product' of first product...............................passed
+Then User is landed to product detail page..................................passed
+Then Verify that detail detail is visible: product name, category, price, availability, condition, brand.passed
 ]]></system-out>
 </testcase>
 </testsuite>

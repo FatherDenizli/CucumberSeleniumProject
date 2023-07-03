@@ -1,7 +1,7 @@
  @Positive_Login_Test
-  Feature: Positive Login Test
+  Feature: Login User with correct email and password
 
-    Scenario: Positive Login Test Case
+    Scenario:   Test Case 2
 
 
       Given User is on automation page
