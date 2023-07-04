@@ -1,7 +1,7 @@
 @emailexisting
 Feature:Register With Existing email Test
 
-  Scenario: Register User with existing email Test Case 5
+  Scenario:  Test Case 5
 
 
     Given User is on automation page

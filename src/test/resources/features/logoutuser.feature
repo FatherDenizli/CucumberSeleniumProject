@@ -1,7 +1,7 @@
 @Logoutuser
-Feature:Logoutuser Test
+Feature: Logout User
 
-  Scenario: Register Test Case
+  Scenario:   Test Case 4
 
 
     Given User is on automation page

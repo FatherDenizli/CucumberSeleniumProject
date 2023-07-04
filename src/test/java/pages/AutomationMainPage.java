@@ -53,7 +53,8 @@ public class AutomationMainPage {
     public WebElement emailAlreadyExist;
 
 
-
+    @FindBy(xpath ="//*[text()=' Products']")
+    public WebElement productsButton;
 
 
 
