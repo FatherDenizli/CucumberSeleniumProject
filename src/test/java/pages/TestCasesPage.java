@@ -19,7 +19,6 @@ public class TestCasesPage {
     public WebElement testCaseSuccesfullText;
 
 
-
     @FindBy(xpath ="//input[@data-qa='signup-name']")
     public WebElement nameInputBox;
 
@@ -28,4 +27,7 @@ public class TestCasesPage {
 
     @FindBy(xpath ="//button[@data-qa='signup-button']")
     public WebElement signUpButton;
+
+
+
 }
