@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.147" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Search Product" name="Test Case 9" time="11.891">
+<testsuite name="Cucumber" time="35.892" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Add Products in Cart" name="Test Case 12" time="35.659">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then Verify that home page is visible successfully..........................passed
 Then User clicks on 'Products' button to see products.......................passed
-Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
-Then User enters product name in search input and click search button.......passed
-Then Verify 'SEARCHED PRODUCTS' is visible in searchbox.....................passed
-Then Verify all the products related to search are visible..................passed
+Then User hovers over first product and click 'Add to cart'.................passed
+Then User clicks 'Continue Shopping' button to continue.....................passed
+Then User hovers over second product and click 'Add to cart'................passed
+Then User click 'View Cart' button..........................................passed
+Then Verify both products are added to Cart.................................passed
+Then Verify their prices, quantity and total price..........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

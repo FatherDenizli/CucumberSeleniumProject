@@ -58,6 +58,34 @@ public class AutomationMainPage {
 
 
 
+//Verift Subscription
+    @FindBy(xpath = "//footer[@id='footer']")
+    public WebElement footer;
+
+    @FindBy(xpath ="//h2[text()='Subscription']")
+    public WebElement subscriptionText;
+
+    @FindBy(xpath="//*[@id='susbscribe_email']")
+    public WebElement emailBox;
+
+    @FindBy(id="susbscribe")
+    public WebElement subscriptionSubmitButton;
+
+    @FindBy(xpath ="//*[text()='You have been successfully subscribed!']")
+    public WebElement successfullySubscribedText;
+
+//Test Case 11: Verify Subscription in Cart page
+
+    @FindBy(xpath ="//*[text()=' Cart']")
+    public WebElement cartButton;
+
+
+
+
+
+
+
+
 
 
 
