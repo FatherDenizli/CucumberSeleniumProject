@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="25.376" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Verify All Products and product detail page Test" name="Test Case 8" time="25.148">
+<testsuite name="Cucumber" time="12.147" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Search Product" name="Test Case 9" time="11.891">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then Verify that home page is visible successfully..........................passed
 Then User clicks on 'Products' button to see products.......................passed
 Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
-Then The products list is visible...........................................passed
-Then Click on 'View Product' of first product...............................passed
-Then User is landed to product detail page..................................passed
-Then Verify that detail detail is visible: product name, category, price, availability, condition, brand.passed
+Then User enters product name in search input and click search button.......passed
+Then Verify 'SEARCHED PRODUCTS' is visible in searchbox.....................passed
+Then Verify all the products related to search are visible..................passed
 ]]></system-out>
 </testcase>
 </testsuite>

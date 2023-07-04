@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class ProductsPage {
 
     public ProductsPage() {
@@ -37,6 +39,23 @@ public class ProductsPage {
 
     @FindBy(xpath ="//*[text()='Brand:']")
     public WebElement brand;
+
+    @FindBy(id ="search_product")
+    public WebElement searchBox;
+
+    @FindBy(id ="submit_search")
+    public WebElement submitSearch;
+
+    @FindBy(xpath ="//*[text()='Searched Products']")
+    public WebElement searchProductsText;
+
+    @FindBy(xpath ="//*[@class='single-products']")
+    public List<WebElement> singleProducts;
+
+
+
+
+
 
 
 
