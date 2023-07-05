@@ -52,7 +52,7 @@ public class ProductsPage {
     @FindBy(xpath ="//*[@class='single-products']")
     public List<WebElement> singleProducts;
 
-//Test Case 13: Verify Product quantity in Cart
+//Test Case 12: Add Products in Cart
 
 
     @FindBy(xpath ="(//*[text()='Add to cart'])[1]")
@@ -72,6 +72,32 @@ public class ProductsPage {
 
     @FindBy(xpath ="//p[@class='cart_total_price']")
     public List<WebElement> pricesList;
+
+//Test Case 13: Verify Product quantity in Cart
+
+    @FindBy(xpath ="(//*[text()='View Product'])[16]")
+    public WebElement viewProduct16;
+
+
+    @FindBy(xpath ="(//*[text()='Add to cart'])[16]")
+    public WebElement addToCart3;
+
+    @FindBy(xpath="//*[@id='quantity']")
+    public WebElement quantity;
+
+    @FindBy(xpath="//*[@class='btn btn-default cart']")
+    public WebElement addToCartInviewProduct;
+
+
+    @FindBy(xpath="//*[text()='View Cart']")
+    public WebElement viewCartInviewProduct;
+
+
+    @FindBy(xpath="//table//tbody//tr[1]//td[4]")
+    public WebElement exactQuantity;
+
+
+
 
 
 

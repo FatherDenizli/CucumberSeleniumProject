@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="35.892" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Add Products in Cart" name="Test Case 12" time="35.659">
+<testsuite name="Cucumber" time="35.786" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Verify Product quantity in Cart" name="Test Case 13" time="35.559">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then Verify that home page is visible successfully..........................passed
 Then User clicks on 'Products' button to see products.......................passed
-Then User hovers over first product and click 'Add to cart'.................passed
-Then User clicks 'Continue Shopping' button to continue.....................passed
-Then User hovers over second product and click 'Add to cart'................passed
+Then User click 'View Product' for any product on home page.................passed
+Then Verify product detail is opened........................................passed
+Then User increases quantity to 4...........................................passed
+Then User clicks  Add to cart button to add cart............................passed
 Then User click 'View Cart' button..........................................passed
-Then Verify both products are added to Cart.................................passed
-Then Verify their prices, quantity and total price..........................passed
+Then Verify that product is displayed in cart page..........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
