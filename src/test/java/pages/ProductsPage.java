@@ -97,6 +97,28 @@ public class ProductsPage {
     public WebElement exactQuantity;
 
 
+    //Test Case 14: Place Order: Register while Checkout
+
+    @FindBy(xpath ="(//*[text()='Add to cart'])[20]")
+    public WebElement addToCart20;
+
+    @FindBy(xpath ="//*[text()='Shopping Cart']")
+    public WebElement shoppingCartText;
+
+
+
+
+    @FindBy(xpath ="//*[text()='Register / Login']")
+    public WebElement registerLoginButton;
+
+    @FindBy(xpath ="//*[@data-qa='continue-button']")
+    public WebElement registerContinueButton;
+
+
+
+
+
+
 
 
 

@@ -80,7 +80,8 @@ public class AutomationMainPage {
     public WebElement cartButton;
 
 
-
+    @FindBy(xpath="//*[@data-qa='continue-button']")
+    public WebElement continueButtonAfterDelete;
 
 
 

@@ -95,13 +95,6 @@ public class RegisterStepDefinitions {
         select3.selectByValue("2021");
         ReusableMethods.waitFor(2);
 
-
-
-
-
-
-
-
         }
 
     @Then("User selects checkbox1 {string}")

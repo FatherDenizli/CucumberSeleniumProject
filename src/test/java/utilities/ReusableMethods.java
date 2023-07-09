@@ -9,6 +9,9 @@ import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -173,6 +176,30 @@ public class ReusableMethods {
         int optionIndex = 1 + random.nextInt(weblist.size() - 1);
         select.selectByIndex(optionIndex);
         return select.getFirstSelectedOption();
+
+
+
     }
+
+
+    public static String dateMoth() {
+        String month;
+        LocalDateTime dateTime=LocalDateTime.now();
+        DateTimeFormatter formatter=DateTimeFormatter.ofPattern("MM");
+        return month=dateTime.format(formatter);
+
+    }
+
+    public static String dateYear() {
+        String month;
+        LocalDateTime dateTime=LocalDateTime.now();
+        DateTimeFormatter formatter=DateTimeFormatter.ofPattern("YYYY");
+        return month=dateTime.format(formatter);
+
+    }
+
+
+
+
 
 }
