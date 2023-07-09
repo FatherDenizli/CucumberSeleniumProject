@@ -70,6 +70,11 @@ public class EnterAccountPage {
     public WebElement creatAccountButton;
 
 
+    //Test Case 14: Place Order: Register while Checkout
+
+
+
+
 
 
 

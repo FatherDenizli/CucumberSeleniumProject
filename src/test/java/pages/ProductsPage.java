@@ -52,7 +52,7 @@ public class ProductsPage {
     @FindBy(xpath ="//*[@class='single-products']")
     public List<WebElement> singleProducts;
 
-//Test Case 13: Verify Product quantity in Cart
+//Test Case 12: Add Products in Cart
 
 
     @FindBy(xpath ="(//*[text()='Add to cart'])[1]")
@@ -72,6 +72,54 @@ public class ProductsPage {
 
     @FindBy(xpath ="//p[@class='cart_total_price']")
     public List<WebElement> pricesList;
+
+//Test Case 13: Verify Product quantity in Cart
+
+    @FindBy(xpath ="(//*[text()='View Product'])[16]")
+    public WebElement viewProduct16;
+
+
+    @FindBy(xpath ="(//*[text()='Add to cart'])[16]")
+    public WebElement addToCart3;
+
+    @FindBy(xpath="//*[@id='quantity']")
+    public WebElement quantity;
+
+    @FindBy(xpath="//*[@class='btn btn-default cart']")
+    public WebElement addToCartInviewProduct;
+
+
+    @FindBy(xpath="//*[text()='View Cart']")
+    public WebElement viewCartInviewProduct;
+
+
+    @FindBy(xpath="//table//tbody//tr[1]//td[4]")
+    public WebElement exactQuantity;
+
+
+    //Test Case 14: Place Order: Register while Checkout
+
+    @FindBy(xpath ="(//*[text()='Add to cart'])[20]")
+    public WebElement addToCart20;
+
+    @FindBy(xpath ="//*[text()='Shopping Cart']")
+    public WebElement shoppingCartText;
+
+
+
+
+    @FindBy(xpath ="//*[text()='Register / Login']")
+    public WebElement registerLoginButton;
+
+    @FindBy(xpath ="//*[@data-qa='continue-button']")
+    public WebElement registerContinueButton;
+
+
+
+
+
+
+
 
 
 

@@ -23,5 +23,16 @@ public class SignUpLoginPage {
     @FindBy(xpath ="//button[@data-qa='signup-button']")
     public WebElement signUpButton;
 
+    @FindBy(xpath ="//*[@data-qa='account-created']")
+    public WebElement accountCreatedText;
+
+
+
+
+
+
+
+
+
 
 }

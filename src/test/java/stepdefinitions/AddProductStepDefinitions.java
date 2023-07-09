@@ -52,6 +52,8 @@ public class AddProductStepDefinitions {
         JSUtils.clickElementByJS(productsPage.viewCart);
         ReusableMethods.waitFor(3);
 
+
+
     }
     @Then("Verify both products are added to Cart")
     public void verify_both_products_are_added_to_cart() {
