@@ -7,7 +7,7 @@ Feature: Place Order: Register before Checkout
     Given User is on automation page
     Then Verify that home page is visible successfully
 
-    Then User clicks 'Signup / Login' button
+    Then User clicks 'Signup / Login' button to to start registtartion
     Then User fills all details in Signup and create account
 
     Then Verify 'ACCOUNT CREATED!' and click 'Continue' button
