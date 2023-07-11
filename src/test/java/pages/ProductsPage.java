@@ -52,6 +52,7 @@ public class ProductsPage {
     @FindBy(xpath ="//*[@class='single-products']")
     public List<WebElement> singleProducts;
 
+
 //Test Case 12: Add Products in Cart
 
 
@@ -115,10 +116,12 @@ public class ProductsPage {
     public WebElement registerContinueButton;
 
 
+    @FindBy(xpath ="//h2[@class='title text-center']")
+    public WebElement womenDressText;
+        //Women - Dress Products
 
-
-
-
+    @FindBy(xpath ="//*[text()='Men - Tshirts Products']")
+    public WebElement menTshirtsText;
 
 
 

@@ -35,9 +35,6 @@ public class CartPage {
     @FindBy(xpath ="//input[@name='cvc']")
     public WebElement cvcNumberBox;
 
-//    @FindBy(xpath ="//*[text()='ex. 311']")
-//    public WebElement cvcNumberBox;
-
 
     @FindBy(xpath ="//*[@name='expiry_month']")
     public WebElement expiryMonthBox;
@@ -49,16 +46,17 @@ public class CartPage {
     public WebElement submitPayButton;
 
 
-
     @FindBy(xpath ="//*[text()='Order Placed!']")
     public WebElement orderPlacedText;
-//*[@id="success_message"]/div
 
 
+//Test Case 17: Remove Products From Cart
 
+    @FindBy(xpath ="//table/tbody/tr[1]/td[6]")
+    public WebElement xRemoveButton;
 
-
-
+    @FindBy(xpath ="//*[text()='Cart is empty!']")
+    public WebElement cartEmptyText;
 
 
 

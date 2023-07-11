@@ -83,7 +83,21 @@ public class AutomationMainPage {
     @FindBy(xpath="//*[@data-qa='continue-button']")
     public WebElement continueButtonAfterDelete;
 
+    @FindBy(xpath ="//*[text()='Category']")
+    public WebElement categoryText;
 
+    @FindBy(xpath="//a[@href='#Women']")
+    public WebElement womenCategoryButton;
+
+
+    @FindBy(linkText="DRESS")
+    public WebElement dressButton;
+
+    @FindBy(xpath="//a[@href='#Men']")
+    public WebElement menCategoryButton;
+
+    @FindBy(xpath ="//*[text()='Tshirts ']")
+    public WebElement tshirtsTextButton;
 
 
 
