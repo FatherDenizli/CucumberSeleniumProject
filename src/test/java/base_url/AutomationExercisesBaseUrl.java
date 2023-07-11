@@ -2,6 +2,7 @@ package base_url;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
+import org.junit.Before;
 
 public class AutomationExercisesBaseUrl {
 
@@ -10,11 +11,12 @@ public class AutomationExercisesBaseUrl {
     public static RequestSpecification spec;
 
 
-    public static void medunnaSetUp() {
+    public static void automationExercisesSetUp() {
 
-        spec = new RequestSpecBuilder().setBaseUri("https://automationexercise.com").build();
+        spec = new RequestSpecBuilder().setBaseUri("https://automationexercise.com/").build();
 
     }
 
 
 }
+

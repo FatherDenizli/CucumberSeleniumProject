@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="123.045" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Place Order: Register before Checkout" name="Test Case 15" time="122.787">
+<testsuite name="Cucumber" time="29.639" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Place View &amp; Cart Brand Products" name="Test Case19" time="29.402">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then Verify that home page is visible successfully..........................passed
-Then User clicks 'Signup / Login' button to to start registtartion..........passed
-Then User fills all details in Signup and create account....................passed
-Then Verify 'ACCOUNT CREATED!' and click 'Continue' button..................passed
-Then Verify ' Logged in as username' at top.................................passed
-Then User adds products to cart.............................................passed
-Then User click 'Cart' button...............................................passed
-Then Verify that cart page is displayed.....................................passed
-Then User clicks Proceed To Checkout........................................passed
-Then Verify Address Details and Review Your Order...........................passed
-Then User  enters description in comment text area and click 'Place Order'..passed
-Then User enters payment details: Name on Card, Card Number, CVC, Expiration date.passed
-Then User clicks 'Pay and Confirm Order' button to complete payment.........passed
-Then Verify success message 'Your order has been placed successfully!'......passed
-Then User clicks 'Delete Account' button to delete account..................passed
-Then User clicks Continue button to go on...................................passed
+Then User clicks on 'Products' button to see products.......................passed
+Then Verify that Brands are visible on left side bar........................passed
+Then user  Clicks any brand name to navigate brands.........................passed
+Then Verify that user is navigated to brand page and brand products are displayed.passed
+Then On left side bar, click on any other brand link........................passed
+Then Verify that user is navigated to that brand page and can see products..passed
 ]]></system-out>
 </testcase>
 </testsuite>

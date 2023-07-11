@@ -52,6 +52,7 @@ public class ProductsPage {
     @FindBy(xpath ="//*[@class='single-products']")
     public List<WebElement> singleProducts;
 
+
 //Test Case 12: Add Products in Cart
 
 
@@ -115,20 +116,31 @@ public class ProductsPage {
     public WebElement registerContinueButton;
 
 
+    @FindBy(xpath ="//h2[@class='title text-center']")
+    public WebElement womenDressText;
+        //Women - Dress Products
+
+    @FindBy(xpath ="//*[text()='Men - Tshirts Products']")
+    public WebElement menTshirtsText;
+
+    @FindBy(xpath ="//*[text()='Brands']")
+    public WebElement brandsText;
+
+    @FindBy(xpath ="//*[text()='Mast & Harbour']")
+    public WebElement mastAndHarbourButton;
+
+    @FindBy(xpath ="//*[text()='Brand - Mast & Harbour Products']")
+    public WebElement mastAndHarbourText;
+
+    @FindBy(xpath ="//*[text()='Kookie Kids']")
+    public WebElement kookieKidsButton;
 
 
+//    @FindBy(xpath ="//*[text()='BRAND - KOOKIE KIDS PRODUCTS']")
+//    public WebElement allenSollyJuniorText;
 
-
-
-
-
-
-
-
-
-
-
-
+    @FindBy(xpath ="//*[@class='title text-center']")
+    public WebElement allenSollyJuniorText;
 
 
 
