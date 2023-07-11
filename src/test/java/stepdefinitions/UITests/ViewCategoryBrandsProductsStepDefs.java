@@ -3,9 +3,10 @@ package stepdefinitions.UITests;
 import io.cucumber.java.en.Then;
 import pages.AutomationMainPage;
 import pages.ProductsPage;
+import utilities.JSUtils;
 import utilities.ReusableMethods;
 
-public class ViewCategoryProductsStepDefs {
+public class ViewCategoryBrandsProductsStepDefs {
 
  AutomationMainPage automationMainPage=new AutomationMainPage();
 
@@ -50,4 +51,42 @@ public class ViewCategoryProductsStepDefs {
 
         productsPage.menTshirtsText.isDisplayed();
     }
+
+//    Test Case 19: View & Cart Brand Products
+
+    @Then("Verify that Brands are visible on left side bar")
+    public void verify_that_brands_are_visible_on_left_side_bar() {
+       productsPage.brandsText.isDisplayed();
+
+    }
+
+
+
+    @Then("user  Clicks any brand name to navigate brands")
+    public void userClicksAnyBrandNameToNavigateBrands() {
+     JSUtils.clickElementByJS(productsPage.mastAndHarbourButton);
+    }
+
+    @Then("Verify that user is navigated to brand page and brand products are displayed")
+    public void verify_that_user_is_navigated_to_brand_page_and_brand_products_are_displayed() {
+        ReusableMethods.waitFor(3);
+       productsPage.mastAndHarbourText.isDisplayed();
+        ReusableMethods.waitFor(3);
+
+    }
+    @Then("On left side bar, click on any other brand link")
+    public void on_left_side_bar_click_on_any_other_brand_link() {
+        ReusableMethods.waitFor(3);
+     JSUtils.clickElementByJS(productsPage.kookieKidsButton);
+        ReusableMethods.waitFor(3);
+    }
+    @Then("Verify that user is navigated to that brand page and can see products")
+    public void verify_that_user_is_navigated_to_that_brand_page_and_can_see_products() {
+        ReusableMethods.waitFor(3);
+     productsPage.allenSollyJuniorText.isDisplayed();
+        ReusableMethods.waitFor(3);
+
+        System.out.println(productsPage.allenSollyJuniorText.getText());
+    }
+
 }

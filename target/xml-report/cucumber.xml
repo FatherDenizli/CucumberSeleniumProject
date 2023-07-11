@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="40.201" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="View Category Products" name="Test Case 18" time="39.954">
+<testsuite name="Cucumber" time="29.639" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Place View &amp; Cart Brand Products" name="Test Case19" time="29.402">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then Verify that home page is visible successfully..........................passed
-Then Verify that categories are visible on left side bar....................passed
-Then User click on 'Women' category.........................................passed
-Then User clicks on any category link under 'Women' category, for example: Dress.passed
-Then Verify that category page is displayed and confirm text WOMEN - TOPS PRODUCTS.passed
-Then clicks on any sub-category link of 'Men' category On left side bar.....passed
-Then Verify that user is navigated to that category page....................passed
+Then User clicks on 'Products' button to see products.......................passed
+Then Verify that Brands are visible on left side bar........................passed
+Then user  Clicks any brand name to navigate brands.........................passed
+Then Verify that user is navigated to brand page and brand products are displayed.passed
+Then On left side bar, click on any other brand link........................passed
+Then Verify that user is navigated to that brand page and can see products..passed
 ]]></system-out>
 </testcase>
 </testsuite>
