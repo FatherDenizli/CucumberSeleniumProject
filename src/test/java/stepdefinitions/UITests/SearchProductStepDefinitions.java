@@ -7,7 +7,7 @@ import pages.ProductsPage;
 
 import java.util.List;
 
-public class SearchProduceStepDefinitions {
+public class SearchProductStepDefinitions {
 
 
     ProductsPage productsPage=new ProductsPage();

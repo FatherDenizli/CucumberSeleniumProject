@@ -139,9 +139,19 @@ public class ProductsPage {
 //    @FindBy(xpath ="//*[text()='BRAND - KOOKIE KIDS PRODUCTS']")
 //    public WebElement allenSollyJuniorText;
 
-    @FindBy(xpath ="//*[@class='title text-center']")
+
+
+    @FindBy(xpath ="//*[text()='Allen Solly Junior']")
     public WebElement allenSollyJuniorText;
 
+
+    //Test Case 20: Search Products and Verify Cart After Login
+
+    @FindBy(id ="search_product")
+    public WebElement searchProductsInputBox;
+
+    @FindBy(xpath ="(//*[text()='Add to cart'])")
+    public  List< WebElement> addToCart;
 
 
 }
