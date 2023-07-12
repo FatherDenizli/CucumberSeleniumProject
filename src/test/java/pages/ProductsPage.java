@@ -154,4 +154,36 @@ public class ProductsPage {
     public  List< WebElement> addToCart;
 
 
+    //Test Case 21: Add review on product
+    @FindBy(xpath ="(//*[text()='View Product'])[1]")
+    public WebElement viewProduct1;
+
+    @FindBy(xpath ="//*[text()='Write Your Review']")
+    public WebElement writeYourReviewText;
+
+    //*[text()='Write Your Review']
+
+//    @FindBy(linkText="#reviews")
+//    public WebElement writeYourReviewText;
+
+    @FindBy(xpath ="//input[@id='name']")
+    public WebElement nameBoxOnReiew;
+
+    @FindBy(id ="email")
+    public WebElement emailBoxOnReiew;
+
+    @FindBy(xpath ="//*[@placeholder='Add Review Here!']")
+    public WebElement reviewTextBox;
+
+    @FindBy(xpath ="//button[@id='button-review']")
+    public WebElement reviewSubmitButton;
+
+    @FindBy(xpath ="//*[text()='Thank you for your review.']")
+    public WebElement thankYouReviewText;
+
+
+
+
+
+
 }

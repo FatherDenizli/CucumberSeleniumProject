@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="125.812" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Search Products and Verify Cart After Login" name="Test Case 20" time="125.573">
+<testsuite name="Cucumber" time="29.803" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Add review on product" name="Test Case 21" time="29.565">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
-Then Verify that home page is visible successfully..........................passed
 Then User clicks on 'Products' button to see products.......................passed
 Then Verify user is navigated to ALL PRODUCTS page successfully.............passed
-Then Verify 'SEARCHED PRODUCT' input box is visible.........................passed
-Then Verify all the products related to search are visible..................passed
-Then User adds those products to cart.......................................passed
-Then User clicks 'Cart' button and verify that products are visible in cart.passed
-Then User Click 'Signup / Login' button and submit login details............passed
-Then User again goes to Cart page...........................................passed
-Then Verify that those products are visible in cart after login as well.....passed
+Then User clicks on View Product button to review...........................passed
+Then Verify Write Your Review is visible on Product review..................passed
+Then User enters name, email and review on review Input Box.................passed
+Then User  clicks 'Submit' button...........................................passed
+Then Verify success message 'Thank you for your review.' is seen............passed
 ]]></system-out>
 </testcase>
 </testsuite>
