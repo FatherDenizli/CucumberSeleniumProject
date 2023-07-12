@@ -14,8 +14,8 @@ Feature: Search Products and Verify Cart After Login
     Then User adds those products to cart
     Then User clicks 'Cart' button and verify that products are visible in cart
     Then User Click 'Signup / Login' button and submit login details
-#    Then User again goes to Cart page
-#    Then Verify that those products are visible in cart after login as well
+    Then User again goes to Cart page
+    Then Verify that those products are visible in cart after login as well
 
 
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="125.77" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Search Products and Verify Cart After Login" name="Test Case 20" time="125.454">
+<testsuite name="Cucumber" time="125.812" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Search Products and Verify Cart After Login" name="Test Case 20" time="125.573">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then Verify that home page is visible successfully..........................passed
@@ -11,6 +11,8 @@ Then Verify all the products related to search are visible..................pass
 Then User adds those products to cart.......................................passed
 Then User clicks 'Cart' button and verify that products are visible in cart.passed
 Then User Click 'Signup / Login' button and submit login details............passed
+Then User again goes to Cart page...........................................passed
+Then Verify that those products are visible in cart after login as well.....passed
 ]]></system-out>
 </testcase>
 </testsuite>

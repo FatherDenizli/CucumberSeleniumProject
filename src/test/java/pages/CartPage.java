@@ -65,6 +65,9 @@ public class CartPage {
     @FindBy(xpath ="//table//tbody//tr/td[4]")
     public List<WebElement> orderQuantity;
 
+    @FindBy(xpath ="//table/tbody/tr/td[1]")
+    public List<WebElement> productPictureInCart;
+
 
 
 

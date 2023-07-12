@@ -8,6 +8,7 @@ import org.openqa.selenium.interactions.Actions;
 import pages.AutomationMainPage;
 import pages.CartPage;
 import pages.ProductsPage;
+import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.JSUtils;
 import utilities.ReusableMethods;
@@ -68,6 +69,31 @@ public class SearchProductsVerifyStepDefs {
     }
     @Then("User Click {string} button and submit login details")
     public void user_click_button_and_submit_login_details(String string) {
+
+        automationMainPage.signUpLoginButton.click();//click Signup / Login
+
+        automationMainPage.email.sendKeys(ConfigReader.getProperty("login_email"));
+        automationMainPage.loginPassword.sendKeys(ConfigReader.getProperty("login_password"));
+
+        automationMainPage.loginButton.click();
+    }
+
+    @Then("User again goes to Cart page")
+    public void user_again_goes_to_cart_page() {
+
+      automationMainPage.cartButton.click();
+
+    }
+    @Then("Verify that those products are visible in cart after login as well")
+    public void verify_that_those_products_are_visible_in_cart_after_login_as_well() {
+
+        List <WebElement> list=cartPage.productPictureInCart;
+
+        for(WebElement w:list){
+
+            Assert.assertTrue(w.isDisplayed());
+        }
+        System.out.println(list.size());
 
     }
 
