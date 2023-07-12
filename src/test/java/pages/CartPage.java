@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class CartPage {
 
 
@@ -58,6 +60,10 @@ public class CartPage {
     @FindBy(xpath ="//*[text()='Cart is empty!']")
     public WebElement cartEmptyText;
 
+//Test Case 20: Search Products and Verify Cart After Login
+
+    @FindBy(xpath ="//table//tbody//tr/td[4]")
+    public List<WebElement> orderQuantity;
 
 
 

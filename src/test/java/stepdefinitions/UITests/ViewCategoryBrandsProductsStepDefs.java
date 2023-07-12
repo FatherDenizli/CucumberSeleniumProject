@@ -1,8 +1,10 @@
 package stepdefinitions.UITests;
 
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.interactions.Actions;
 import pages.AutomationMainPage;
 import pages.ProductsPage;
+import utilities.Driver;
 import utilities.JSUtils;
 import utilities.ReusableMethods;
 
@@ -70,7 +72,9 @@ public class ViewCategoryBrandsProductsStepDefs {
     @Then("Verify that user is navigated to brand page and brand products are displayed")
     public void verify_that_user_is_navigated_to_brand_page_and_brand_products_are_displayed() {
         ReusableMethods.waitFor(3);
-       productsPage.mastAndHarbourText.isDisplayed();
+        Actions actions=new Actions(Driver.getDriver());
+         actions.moveToElement(productsPage.mastAndHarbourText) ;
+         productsPage.mastAndHarbourText.isDisplayed();
         ReusableMethods.waitFor(3);
 
     }

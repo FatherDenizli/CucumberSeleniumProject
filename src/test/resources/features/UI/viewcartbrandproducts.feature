@@ -1,7 +1,7 @@
 @View_cart_brand_products
 Feature: Place View & Cart Brand Products
 
-  Scenario:   Test Case19
+  Scenario:   Test Case 19
 
 
     Given User is on automation page
