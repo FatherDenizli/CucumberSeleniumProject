@@ -68,6 +68,11 @@ public class CartPage {
     @FindBy(xpath ="//table/tbody/tr/td[1]")
     public List<WebElement> productPictureInCart;
 
+//    Test Case 22: Add to cart from Recommended items
+
+    @FindBy(xpath ="//table//tbody//td[1]")
+    public WebElement recommendedProductPicture;
+
 
 
 

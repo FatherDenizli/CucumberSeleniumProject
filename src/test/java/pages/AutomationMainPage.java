@@ -99,11 +99,19 @@ public class AutomationMainPage {
     @FindBy(xpath ="//*[text()='Tshirts ']")
     public WebElement tshirtsTextButton;
 
+//    Test Case 22: Add to cart from Recommended items
+    @FindBy(xpath ="//*[text()='recommended items']")
+    public WebElement recommendedItemText;
+
+    @FindBy(xpath ="//*[text()='Copyright © 2021 All rights reserved']")
+    public WebElement allRightsReservedText;
 
 
+    @FindBy(xpath ="(//*[text()='View Product'])[68]")
+    public WebElement recommendedProduct1;
 
-
-
+    @FindBy(xpath ="(//*[@data-product-id='4'])")
+    public WebElement recommendedProduct11;
 
 
 

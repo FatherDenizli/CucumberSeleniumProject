@@ -54,7 +54,7 @@ public class AddReviewOnProductStepDefs {
     public void verify_success_message_is_seen(String string) {
 
          productsPage.thankYouReviewText.isDisplayed();
-        System.out.println(productsPage.thankYouReviewText.getText());
+        System.out.println(productsPage.thankYouReviewText.getText()) ;
 
 
 
