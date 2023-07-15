@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="30.227" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Add to cart from Recommended items" name="Test Case 22" time="29.942">
+<testsuite name="Cucumber" time="76.53" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Verify address details in checkout page" name="Test Case 23" time="76.282">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
-Then User scrolls to bottom of page.........................................passed
-Then Verify 'RECOMMENDED ITEMS' are visible.................................passed
-Then Click on Add To Cart on Recommended product............................passed
-Then User clicks on View Cart button to see products in Cart................passed
-Then Verify that  product from recommended is displayed in cart page........passed
+Then Verify that home page is visible successfully..........................passed
+Then User clicks 'Signup / Login' button to to start registtartion..........passed
+Then User fills all details in Signup and create account....................passed
+Then Verify 'ACCOUNT CREATED!' and click 'Continue' button..................passed
+Then Verify ' Logged in as username' at top.................................passed
+Then User adds products to cart.............................................passed
+Then User click 'Cart' button...............................................passed
+Then Verify that cart page is displayed.....................................passed
+Then User clicks Proceed To Checkout........................................passed
+Then Verify that the delivery address is same address filled at the time registration of account.passed
+Then Verify that the billing address is same address filled at the time registration of account.passed
+Then User clicks 'Delete Account' button to delete account..................passed
+Then Verify ACCOUNT DELETED! and click Continue button to go on.............passed
 ]]></system-out>
 </testcase>
 </testsuite>

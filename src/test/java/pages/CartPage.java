@@ -75,7 +75,13 @@ public class CartPage {
 
 
 
+//    Test Case 23: Verify address details in checkout page
 
+    @FindBy(xpath ="(//li[@class='address_address1 address_address2'])[2]")
+    public WebElement deliveryAddress;
+
+    @FindBy(xpath ="(//li[@class='address_address1 address_address2'])[5]")
+    public WebElement billingAddress;
 
 
 }

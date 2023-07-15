@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks" },
         dryRun = false,
-        tags = "@Add_to_cart_from_Recommended_items"
+        tags = "@Verify_address_details"
 )
 public class Runner {
 }
