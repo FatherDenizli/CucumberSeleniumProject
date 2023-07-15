@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import pages.*;
+import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.JSUtils;
 import utilities.ReusableMethods;
@@ -71,7 +72,7 @@ public class registerWhileCheckoutStepDefs {
     }
 
     @Then("User fills all details in Signup and create account")
-    public void user_fills_all_details_in_signup_and_create_account() {
+    public void user_fills_all_details_in_signup_and_create_account( ) {
         signUpLoginPage.nameInputBox.sendKeys(faker.name().firstName());
         signUpLoginPage.emailInputBox.sendKeys(faker.internet().emailAddress());
         signUpLoginPage.signUpButton.click();
@@ -95,7 +96,12 @@ public class registerWhileCheckoutStepDefs {
         ReusableMethods.waitFor(2);
         enterAccountPage.companyName.sendKeys(faker.company().name());
         ReusableMethods.waitFor(2);
-        enterAccountPage.address1.sendKeys(faker.address().fullAddress());
+        enterAccountPage.address1.sendKeys(ConfigReader.getProperty("Adress1_2"));
+        ReusableMethods.waitFor(5);
+
+
+
+
         ReusableMethods.waitFor(2);
 
         Select select4 = new Select(enterAccountPage.countryName);
@@ -180,10 +186,6 @@ public class registerWhileCheckoutStepDefs {
 
 
     }
-
-
-
-
 
 
     @Then("User clicks Continue button to go on")

@@ -115,6 +115,13 @@ public class AutomationMainPage {
 
 
 
+//    Test Case 23: Verify address details in checkout page\
+
+    @FindBy(xpath ="//*[text()='Account Deleted!']")
+    public WebElement accountDeletedText2;
+
+    @FindBy(xpath ="//*[text()='Continue']")
+    public WebElement continueButton2;
 
 
 
