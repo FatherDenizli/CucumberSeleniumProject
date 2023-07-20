@@ -163,6 +163,7 @@ public class registerWhileCheckoutStepDefs {
         //cartPage.cardNumberBox.sendKeys("345");//Faker.instance().number().digits(3), Keys.TAB)"";
         cartPage.cvcNumberBox.sendKeys(faker.instance().number().digits(3));
         cartPage.expiryMonthBox.sendKeys(ReusableMethods.dateMoth());
+        System.out.println(ReusableMethods.dateMoth());
         cartPage.expiryYearBox.sendKeys(ReusableMethods.dateYear());
 
 
@@ -172,7 +173,6 @@ public class registerWhileCheckoutStepDefs {
     public void user_clicks_button_to_complete_payment(String string) {
 
         cartPage.submitPayButton.click();
-
 
     }
 
