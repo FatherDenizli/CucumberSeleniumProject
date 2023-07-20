@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="76.53" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Verify address details in checkout page" name="Test Case 23" time="76.282">
+<testsuite name="Cucumber" time="57.03" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Registration User" name="Test Case 1" time="56.747">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
-Then Verify that home page is visible successfully..........................passed
-Then User clicks 'Signup / Login' button to to start registtartion..........passed
-Then User fills all details in Signup and create account....................passed
-Then Verify 'ACCOUNT CREATED!' and click 'Continue' button..................passed
-Then Verify ' Logged in as username' at top.................................passed
-Then User adds products to cart.............................................passed
-Then User click 'Cart' button...............................................passed
-Then Verify that cart page is displayed.....................................passed
-Then User clicks Proceed To Checkout........................................passed
-Then Verify that the delivery address is same address filled at the time registration of account.passed
-Then Verify that the billing address is same address filled at the time registration of account.passed
-Then User clicks 'Delete Account' button to delete account..................passed
-Then Verify ACCOUNT DELETED! and click Continue button to go on.............passed
+Then User verifies that home page is visible successfully...................passed
+Then User clicks on 'Signup / Login' button.................................passed
+Then User verifies 'New User Signup!' is visible............................passed
+Then User enters name and email address.....................................passed
+Then User clicks 'Signup' button............................................passed
+Then User verifies that 'ENTER ACCOUNT INFORMATION' is visible..............passed
+Then User fills details: Title, Name, Email, Password, Date of birth........passed
+Then User selects checkbox1 'Sign up for our newsletter!'...................passed
+Then User selects checkbox2 'Receive special offers from our partners!'.....passed
+Then User fills details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number.passed
+Then User clicks 'Create Account button'....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
