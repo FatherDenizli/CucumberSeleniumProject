@@ -1,7 +1,7 @@
-@Registration
+@Registration  @smoke
 Feature:Registration User
 
- Scenario:  Test Case 1
+ Scenario:  Test Case 116
    Given User is on automation page
    Then User verifies that home page is visible successfully
    Then  User clicks on 'Signup / Login' button
