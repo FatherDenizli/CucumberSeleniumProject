@@ -20,7 +20,7 @@ public class SignUpLoginPage {
     @FindBy(xpath ="//input[@data-qa='signup-email']")
     public WebElement emailInputBox;
 
-    @FindBy(xpath ="//button[@data-qa='signup-button']")
+    @FindBy(xpath ="//button[@type='submit']")
     public WebElement signUpButton;
 
     @FindBy(xpath ="//*[@data-qa='account-created']")

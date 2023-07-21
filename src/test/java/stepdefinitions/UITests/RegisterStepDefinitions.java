@@ -107,31 +107,31 @@ public class RegisterStepDefinitions {
         @Then("User fills details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number")
         public void user_fills_details_first_name_last_name_company_address_address2_country_state_city_zipcode_mobile_number() {
             enterAccountPage.firstName.sendKeys(faker.name().firstName());
-            ReusableMethods.waitFor(2);
+            ReusableMethods.waitFor(5);
             enterAccountPage.lastName.sendKeys(faker.name().lastName());
-            ReusableMethods.waitFor(2);
+            ReusableMethods.waitFor(5);
             enterAccountPage.companyName.sendKeys(faker.company().name());
-            ReusableMethods.waitFor(2);
+            ReusableMethods.waitFor(5);
             enterAccountPage.address1.sendKeys(faker.address().fullAddress());
-            ReusableMethods.waitFor(2);
+            ReusableMethods.waitFor(5);
 
             Select select4=new Select(enterAccountPage.countryName);
             select4.selectByValue("Canada");
-            ReusableMethods.waitFor(2);
+            ReusableMethods.waitFor(5);
 
             enterAccountPage.stateName.sendKeys("Ontario");
-            ReusableMethods.waitFor(2);
+            ReusableMethods.waitFor(5);
             enterAccountPage.cityName.sendKeys("Toronto");
-            ReusableMethods.waitFor(2);
+            ReusableMethods.waitFor(5);
             enterAccountPage.zipCode.sendKeys("M5T 9D6");
-            ReusableMethods.waitFor(2);
+            ReusableMethods.waitFor(5);
             enterAccountPage.mobileNumber.sendKeys("+1 (437) 2986754");
 
         }
         @Then("User clicks {string}")
         public void user_clicks(String string) {
 
-            ReusableMethods.waitFor(2);
+            ReusableMethods.waitFor(10);
             enterAccountPage.creatAccountButton.click();
 
 
