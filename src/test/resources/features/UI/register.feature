@@ -1,4 +1,4 @@
-@Registration  @smoke
+@Registration
 Feature:Registration User
 
  Scenario:  Test Case 1
