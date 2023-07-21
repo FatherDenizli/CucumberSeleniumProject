@@ -14,7 +14,7 @@ public class EnterAccountPage {
 //    @FindBy(xpath ="//*[text()='Enter Account Information']")
 //    public WebElement enterAccountText;
 
-    @FindBy(xpath="//*[@class='title text-center']")
+    @FindBy(xpath="(//*[@class='title text-center'])[1]")
     public WebElement enterAccountText;
     @FindBy(css="#id_gender1")
     public WebElement maleRadioButton;
