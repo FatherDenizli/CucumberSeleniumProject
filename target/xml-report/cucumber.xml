@@ -1,40 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="68.175" tests="2" skipped="0" failures="1" errors="0">
-<testcase classname="Registration User" name="Test Case 116" time="55.089">
-<system-out><![CDATA[
-Given User is on automation page............................................passed
-Then User verifies that home page is visible successfully...................passed
-Then User clicks on 'Signup / Login' button.................................passed
-Then User verifies 'New User Signup!' is visible............................passed
-Then User enters name and email address.....................................passed
-Then User clicks 'Signup' button............................................passed
-Then User verifies that 'ENTER ACCOUNT INFORMATION' is visible..............passed
-Then User fills details: Title, Name, Email, Password, Date of birth........passed
-Then User selects checkbox1 'Sign up for our newsletter!'...................passed
-Then User selects checkbox2 'Receive special offers from our partners!'.....passed
-Then User fills details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number.passed
-Then User clicks 'Create Account button'....................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Place Order: Login before Checkout" name="Test Case 16" time="12.76">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[text()=' Signup / Login']&quot;}
+<testsuite name="Cucumber" time="20.332" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Place Order: Login before Checkout" name="Test Case 16" time="20.07">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=' Logged in as ']&quot;}
   (Session info: chrome=114.0.5735.199)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e05a4894de5b0281fd509c11954758e5, findElement {using=xpath, value=//a[text()=' Signup / Login']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53875}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53875/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e05a4894de5b0281fd509c11954758e5">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()=' Signup / Login']"}
+Command: [6f734af4d4af2765f7e86ca1ffcd88b9, findElement {using=xpath, value=//*[text()=' Logged in as ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58713/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f734af4d4af2765f7e86ca1ffcd88b9">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()=' Logged in as ']"}
   (Session info: chrome=114.0.5735.199)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e05a4894de5b0281fd509c11954758e5, findElement {using=xpath, value=//a[text()=' Signup / Login']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53875}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53875/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e05a4894de5b0281fd509c11954758e5
+Command: [6f734af4d4af2765f7e86ca1ffcd88b9, findElement {using=xpath, value=//*[text()=' Logged in as ']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58713/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f734af4d4af2765f7e86ca1ffcd88b9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -53,18 +37,18 @@ Session ID: e05a4894de5b0281fd509c11954758e5
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
-	at stepdefinitions.UITests.RegisterBeforeCheckoutStepDefs.user_clicks_button_to_to_start_registtartion(RegisterBeforeCheckoutStepDefs.java:22)
-	at ✽.User clicks 'Signup / Login' button to to start registtartion(file:///C:/Users/user/IdeaProjects/my-cucumber-automation-project/./src/test/resources/features/UI/loginbeforecheckout.feature:10)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at stepdefinitions.UITests.registerWhileCheckoutStepDefs.verify_at_top(registerWhileCheckoutStepDefs.java:137)
+	at ✽.Verify ' Logged in as username' at top(file:///C:/Users/user/IdeaProjects/my-cucumber-automation-project/./src/test/resources/features/UI/loginbeforecheckout.feature:15)
 ]]>
 </failure>
 <system-out><![CDATA[
 Given User is on automation page............................................passed
 Then Verify that home page is visible successfully..........................passed
-Then User clicks 'Signup / Login' button to to start registtartion..........failed
-Then User Enters correct email address and password.........................skipped
-Then user clicks 'login' button.............................................skipped
-Then Verify ' Logged in as username' at top.................................skipped
+Then User clicks 'Signup / Login' button to to start registtartion..........passed
+Then User Enters correct email address and password.........................passed
+Then user clicks 'login' button.............................................passed
+Then Verify ' Logged in as username' at top.................................failed
 Then User adds products to cart.............................................skipped
 Then User click 'Cart' button...............................................skipped
 Then Verify that cart page is displayed.....................................skipped
