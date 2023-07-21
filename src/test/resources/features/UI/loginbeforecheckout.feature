@@ -1,4 +1,4 @@
-@Login_before_checkout  @smoke
+@Login_before_checkout   @smoke
 Feature: Place Order: Login before Checkout
 
   Scenario:   Test Case 16
