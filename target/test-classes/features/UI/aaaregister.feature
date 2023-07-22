@@ -6,7 +6,7 @@ Feature:Registration User
    Then User verifies that home page is visible successfully
    Then  User clicks on 'Signup / Login' button
    Then User verifies 'New User Signup!' is visible
-   Then User enters name and email address
+   Then User enters name and email address to sign up
    Then User clicks 'Signup' button
     Then User verifies that 'ENTER ACCOUNT INFORMATION' is visible
 

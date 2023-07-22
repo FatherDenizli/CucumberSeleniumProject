@@ -18,7 +18,12 @@ public class SignUpLoginPage {
     public WebElement nameInputBox;
 
     @FindBy(xpath ="//input[@data-qa='signup-email']")
-    public WebElement emailInputBox;
+    public WebElement signUpEmailInputBox;
+
+    @FindBy(xpath ="//input[@data-qa='login-email']")
+    public WebElement loginEmailInputBox;
+
+
 
     @FindBy(xpath ="//button[@type='submit']")
     public WebElement signUpButton;

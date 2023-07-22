@@ -83,7 +83,7 @@ public class LoginStepDefinitions {
     public void user_enters_name_and_already_registered_email_address() {
 
         signUpLoginPage.nameInputBox.sendKeys(ConfigReader.getProperty("user_name"));
-        signUpLoginPage.emailInputBox.sendKeys(ConfigReader.getProperty("login_email"));
+        signUpLoginPage.loginEmailInputBox.sendKeys(ConfigReader.getProperty("login_email"));
 
 
     }
