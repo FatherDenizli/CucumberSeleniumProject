@@ -8,10 +8,10 @@ import org.junit.runner.RunWith;
                 "pretty",
               //  "html:target/default-cucumber-reports.html",
                 "html:target/cucumber-reports",
-//                "json:target/json-reports/cucumber.json",
-//                "junit:target/xml-report/cucumber.xml",
-//                "rerun:target/failedRerun.txt",
-              //  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml",
+                "rerun:target/failedRerun.txt",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
         monochrome=true,
         features = "./src/test/resources/features",

@@ -46,13 +46,13 @@ public class RegisterStepDefinitions {
          @Then("User enters name and email address to sign up")
     public void userEntersNameAndEmailAddressToSignUp() {
         // signUpLoginPage.nameInputBox.sendKeys(faker1.name().name());
-        ReusableMethods.waitFor(2);
-        signUpLoginPage.nameInputBox.sendKeys(ConfigReader.getProperty("user_name"));
-        //  signUpLoginPage.emailInputBox.sendKeys(faker1.internet().emailAddress());
-        ReusableMethods.waitFor(2);
-        signUpLoginPage.signUpEmailInputBox.sendKeys(ConfigReader.getProperty("login_email"));
+        ReusableMethods.waitFor(5);
+        signUpLoginPage.nameInputBox.sendKeys(faker.name().fullName());
+        signUpLoginPage.signUpEmailInputBox.sendKeys(faker.internet().emailAddress());
+        ReusableMethods.waitFor(5);
+      //  signUpLoginPage.signUpEmailInputBox.sendKeys(ConfigReader.getProperty("login_email"));
 
-             ReusableMethods.waitFor(2);
+
     }
 
     @Then("User clicks Signup button to sign up for user")

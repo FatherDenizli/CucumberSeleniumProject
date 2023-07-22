@@ -1,65 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="20.332" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="Place Order: Login before Checkout" name="Test Case 16" time="20.07">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[text()=' Logged in as ']&quot;}
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6f734af4d4af2765f7e86ca1ffcd88b9, findElement {using=xpath, value=//*[text()=' Logged in as ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58713/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f734af4d4af2765f7e86ca1ffcd88b9">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[text()=' Logged in as ']"}
-  (Session info: chrome=114.0.5735.199)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6f734af4d4af2765f7e86ca1ffcd88b9, findElement {using=xpath, value=//*[text()=' Logged in as ']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58713}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58713/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6f734af4d4af2765f7e86ca1ffcd88b9
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
-	at stepdefinitions.UITests.registerWhileCheckoutStepDefs.verify_at_top(registerWhileCheckoutStepDefs.java:137)
-	at ✽.Verify ' Logged in as username' at top(file:///C:/Users/user/IdeaProjects/my-cucumber-automation-project/./src/test/resources/features/UI/loginbeforecheckout.feature:15)
-]]>
-</failure>
+<testsuite name="Cucumber" time="87.364" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Registration User" name="Test Case 116" time="87.109">
 <system-out><![CDATA[
 Given User is on automation page............................................passed
-Then Verify that home page is visible successfully..........................passed
-Then User clicks 'Signup / Login' button to to start registtartion..........passed
-Then User Enters correct email address and password.........................passed
-Then user clicks 'login' button.............................................passed
-Then Verify ' Logged in as username' at top.................................failed
-Then User adds products to cart.............................................skipped
-Then User click 'Cart' button...............................................skipped
-Then Verify that cart page is displayed.....................................skipped
-Then User clicks Proceed To Checkout........................................skipped
-Then Verify Address Details and Review Your Order...........................skipped
-Then User  enters description in comment text area and click 'Place Order'..skipped
-Then User enters payment details: Name on Card, Card Number, CVC, Expiration date.skipped
-Then User clicks 'Pay and Confirm Order' button to complete payment.........skipped
-Then Verify success message 'Your order has been placed successfully!'......skipped
-Then User clicks 'Delete Account' button to delete account..................skipped
-Then Verify 'ACCOUNT DELETED!' and click 'Continue' button..................skipped
+Then User verifies that home page is visible successfully...................passed
+Then User clicks on 'Signup / Login' button.................................passed
+Then User verifies 'New User Signup!' is visible............................passed
+Then User enters name and email address to sign up..........................passed
+Then User clicks Signup button to sign up for user..........................passed
+Then User verifies that 'ENTER ACCOUNT INFORMATION' is visible..............passed
+Then User fills details: Title, Name, Email, Password, Date of birth........passed
+Then User selects checkbox1 'Sign up for our newsletter!'...................passed
+Then User selects checkbox2 'Receive special offers from our partners!'.....passed
+Then User fills details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number.passed
+Then User clicks 'Create Account button'....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
