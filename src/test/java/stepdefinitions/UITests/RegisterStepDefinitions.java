@@ -51,14 +51,15 @@ public class RegisterStepDefinitions {
         //  signUpLoginPage.emailInputBox.sendKeys(faker1.internet().emailAddress());
         ReusableMethods.waitFor(2);
         signUpLoginPage.signUpEmailInputBox.sendKeys(ConfigReader.getProperty("login_email"));
+
+             ReusableMethods.waitFor(2);
     }
-    @Then("User clicks {string} button")
-    public void user_clicks_button(String string) {
+
+    @Then("User clicks Signup button to sign up for user")
+    public void userClicksSignupButtonToSignUpForUser() {
         JSUtils.clickElementByJS(signUpLoginPage.signUpButton);
-
-        ReusableMethods.waitFor(2);
-
     }
+
 
     @Then("User verifies that {string} is visible")
     public void user_verifies_that_is_visible(String string) {
@@ -137,6 +138,7 @@ public class RegisterStepDefinitions {
 
 
     }
+
 
 
 }
