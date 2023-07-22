@@ -11,11 +11,10 @@ public class EnterAccountPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-//    @FindBy(xpath ="//*[text()='Enter Account Information']")
-//    public WebElement enterAccountText;
-
-    @FindBy(xpath="(//*[@class='title text-center'])[1]")
+    @FindBy(xpath ="//*[text()='Enter Account Information']")
     public WebElement enterAccountText;
+
+
     @FindBy(css="#id_gender1")
     public WebElement maleRadioButton;
 

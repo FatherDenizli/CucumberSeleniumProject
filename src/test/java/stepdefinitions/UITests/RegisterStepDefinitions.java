@@ -10,6 +10,7 @@ import pages.EnterAccountPage;
 import pages.SignUpLoginPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.JSUtils;
 import utilities.ReusableMethods;
 
 public class RegisterStepDefinitions {
@@ -42,20 +43,19 @@ public class RegisterStepDefinitions {
     public void user_verifies_is_visible(String string) {
       Assert.assertTrue(signUpLoginPage.signUpText.isDisplayed());
     }
-    @Then("User enters name and email address")
-    public void user_enters_name_and_email_address() {
-        Faker faker1 =new Faker();
-       // signUpLoginPage.nameInputBox.sendKeys(faker1.name().name());
+         @Then("User enters name and email address to sign up")
+    public void userEntersNameAndEmailAddressToSignUp() {
+        // signUpLoginPage.nameInputBox.sendKeys(faker1.name().name());
         ReusableMethods.waitFor(2);
         signUpLoginPage.nameInputBox.sendKeys(ConfigReader.getProperty("user_name"));
-      //  signUpLoginPage.emailInputBox.sendKeys(faker1.internet().emailAddress());
+        //  signUpLoginPage.emailInputBox.sendKeys(faker1.internet().emailAddress());
         ReusableMethods.waitFor(2);
-        signUpLoginPage.emailInputBox.sendKeys(ConfigReader.getProperty("login_email"));
-
+        signUpLoginPage.signUpEmailInputBox.sendKeys(ConfigReader.getProperty("login_email"));
     }
     @Then("User clicks {string} button")
     public void user_clicks_button(String string) {
-        signUpLoginPage.signUpButton.click();
+        JSUtils.clickElementByJS(signUpLoginPage.signUpButton);
+
         ReusableMethods.waitFor(2);
 
     }
@@ -64,7 +64,7 @@ public class RegisterStepDefinitions {
     public void user_verifies_that_is_visible(String string) {
          ReusableMethods.waitFor(2);
 
-          enterAccountPage.enterAccountText.isDisplayed();
+         // enterAccountPage.enterAccountText.isDisplayed();
           ReusableMethods.waitForVisibility(enterAccountPage.enterAccountText,15).isDisplayed();
 
     }
@@ -137,4 +137,6 @@ public class RegisterStepDefinitions {
 
 
     }
+
+
 }

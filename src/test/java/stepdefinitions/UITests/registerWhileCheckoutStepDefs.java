@@ -74,7 +74,7 @@ public class registerWhileCheckoutStepDefs {
     @Then("User fills all details in Signup and create account")
     public void user_fills_all_details_in_signup_and_create_account( ) {
         signUpLoginPage.nameInputBox.sendKeys(faker.name().firstName());
-        signUpLoginPage.emailInputBox.sendKeys(faker.internet().emailAddress());
+        signUpLoginPage.signUpEmailInputBox.sendKeys(faker.internet().emailAddress());
         signUpLoginPage.signUpButton.click();
 
         enterAccountPage.maleRadioButton.click();
