@@ -95,13 +95,13 @@ public class RegisterStepDefinitions {
 
     @Then("User selects checkbox1 {string}")
     public void user_selects_checkbox1(String string) {
-        enterAccountPage.newsLetterCheckbox.click();
+       JSUtils.clickElementByJS(enterAccountPage.newsLetterCheckbox);
         ReusableMethods.waitFor(2);
 
     }
     @Then("User selects checkbox2 {string}")
     public void user_selects_checkbox2(String string) {
-        enterAccountPage.specialOffersCheckbox.click();
+        JSUtils.clickElementByJS(enterAccountPage.specialOffersCheckbox);
         ReusableMethods.waitFor(2);
 
     }
