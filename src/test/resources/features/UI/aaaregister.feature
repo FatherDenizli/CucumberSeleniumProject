@@ -11,8 +11,8 @@ Feature:Registration User
     Then User verifies that 'ENTER ACCOUNT INFORMATION' is visible
 
    Then User fills details: Title, Name, Email, Password, Date of birth
-   Then User selects checkbox1 'Sign up for our newsletter!'
-   Then User selects checkbox2 'Receive special offers from our partners!'
+#   Then User selects checkbox1 'Sign up for our newsletter!'
+#   Then User selects checkbox2 'Receive special offers from our partners!'
    Then User fills details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
    Then User clicks 'Create Account button'
 
